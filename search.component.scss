@@ -1,0 +1,23 @@
+.row-item{
+    margin: 25px auto;
+    
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row-item .col-pic img{
+     width: 100px;
+}
+
+
+.row-item .col-details h6{
+    margin-top: 10px;
+    font-size: 24px;
+    color: blueviolet;
+    margin-bottom: 0;
+}
+.row-item .col-details p{
+    margin-bottom: 0;
+}

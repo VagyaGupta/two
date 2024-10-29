@@ -1,0 +1,137 @@
+
+.picsum-img-wrapper {
+  width: 80%; 
+  max-height: 500px; 
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 5%;
+}
+
+.picsum-img-wrapper img {
+  width: auto; 
+  height: 100%; 
+  max-height: 500px; 
+  object-fit: cover; 
+}
+
+.carousel-caption {
+  color:black;
+  background-color:azure;
+  max-width: 200px;
+  max-height: 80px;
+}
+
+@media (max-width: 768px) {
+  .picsum-img-wrapper {
+    max-height: 300px; /* Smaller max height for mobile */
+  }
+}
+
+.trendy-product h2 {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+/* Hover effect for product cards */
+.product-wrapper:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+.item-image img {
+  width: 100%; /* Full width for responsive images */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Limit height for uniformity */
+  object-fit: contain; /* Contain within the box */
+  border-top-left-radius: 8px; /* Rounded corners */
+  border-top-right-radius: 8px; /* Rounded corners */
+}
+
+
+.item-name h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em; 
+  margin: 0; 
+}
+
+
+.product-details h6 {
+  margin: 5px 0;
+  font-size: 1em; 
+}
+
+
+.add-to-cart {
+  display: flex;
+  justify-content: center; 
+  padding: 10px;
+}
+
+
+.add-to-cart a {
+  margin: 0 10px; 
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #007bff; 
+  color: white; 
+  text-decoration: none; 
+  transition: background-color 0.3s; 
+}
+
+
+.add-to-cart a:hover {
+  background-color: #0056b3; 
+}
+
+
+.row {
+  display: flex; /* Enable flexbox for the row */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: space-between; /* Space between items */
+}
+
+.column-represent {
+  display: flex; 
+  justify-content: space-between; /* Center content in each column */
+  flex-direction: column; 
+  width: calc(25% - 20px);/* Ensure column items stack vertically */
+  // flex:1 1 calc(25% - 20px); /* Adjust to fit 4 items per row, with some margin */
+  margin: 10px; 
+  box-sizing: border-box; 
+}
+
+.product-wrapper {
+  text-align: center; 
+  border: 2px solid #ddd; 
+  border-radius: 8px; 
+  overflow: hidden; 
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .picsum-img-wrapper {
+    max-height: 300px; /* Smaller max height for mobile */
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .column-represent {
+    width: calc(100% - 20px); /* Full width for small screens */
+  }
+
+  .trendy-product h2 {
+    font-size: 1.2rem; /* Further reduce font size for small screens */
+  }
+}
